@@ -25,21 +25,19 @@ Installation & Setup
 * cd leaderboard-app
 
 Setup Backend
-
-cd backend
-npm install
+* cd backend
+* npm install
 
 Create a .env file in the backend directory with the following:
-
-MONGO_URI=your_mongodb_connection_string
-PORT=5000
+* MONGO_URI=your_mongodb_connection_string
+* PORT=5000
 
 Start the Backend Server
-npm start
+* npm start
 
 3. Setup Frontend
-cd ../frontend
-npm install
+* cd ../frontend
+* npm install
 
 The frontend will run on http://localhost:3000/, and the backend will be on http://localhost:5000/.
 
@@ -47,10 +45,10 @@ The frontend will run on http://localhost:3000/, and the backend will be on http
 API Endpoints
 
 Get Leaderboard
-GET /api/leaderboard
+* GET /api/leaderboard
 
 Vote for a Participant
-POST /api/leaderboard/vote
+* POST /api/leaderboard/vote
 
 * Body (JSON):
 {
@@ -71,7 +69,7 @@ Our leaderboard algorithm is designed to ensure fairness, scalability, and real-
 
 1. Ensuring Fairness
 * Each voter can vote for a participant with a score between 1-100.
-*8 The latest vote counts, meaning if a voter changes their vote, their previous vote is removed and replaced with the new score.
+* The latest vote counts, meaning if a voter changes their vote, their previous vote is removed and replaced with the new score.
 * To track previous votes, we use a Map data structure inside the MongoDB Participant schema.
 * This prevents vote inflation and ensures that each voter has equal influence on the leaderboard.
 
