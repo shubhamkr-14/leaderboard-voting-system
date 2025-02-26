@@ -14,16 +14,15 @@ Features
 Prerequisites
 
 Make sure you have the following installed on your machine:
-
 * Node.js (v14+ recommended)
 * MongoDB (local or Atlas cloud instance)
 * npm (Node Package Manager)
 
-nstallation & Setup
+Installation & Setup
 
 1. Clone the Repository
-git clone https://github.com/your-repository/leaderboard-app.git
-cd leaderboard-app
+* git clone https://github.com/your-repository/leaderboard-app.git
+* cd leaderboard-app
 
 Setup Backend
 
