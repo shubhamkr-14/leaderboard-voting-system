@@ -1,0 +1,53 @@
+/* Leaderboard Container */
+.leaderboard-container {
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Leaderboard List */
+.leaderboard-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Each Participant */
+.leaderboard-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Highlight Top 3 */
+.rank-1 { background: #ffd700; color: black; }  /* Gold */
+.rank-2 { background: #c0c0c0; color: black; }  /* Silver */
+.rank-3 { background: #cd7f32; color: white; }  /* Bronze */
+
+/* Other Ranks */
+.leaderboard-item:not(.rank-1):not(.rank-2):not(.rank-3) {
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+/* Rank, Name, Score */
+.rank { font-weight: bold; }
+.name { flex-grow: 1; text-align: left; padding-left: 10px; }
+.score { font-weight: bold; }
