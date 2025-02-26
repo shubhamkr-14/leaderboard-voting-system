@@ -26,10 +26,12 @@ git clone https://github.com/your-repository/leaderboard-app.git
 cd leaderboard-app
 
 Setup Backend
+
 cd backend
 npm install
 
 Create a .env file in the backend directory with the following:
+
 MONGO_URI=your_mongodb_connection_string
 PORT=5000
 
